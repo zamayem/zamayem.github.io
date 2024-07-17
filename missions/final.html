@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPV</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <h1>Du har nu <span style="color: yellow;">NYCKELN</span> att lösa den <span style="font-style: italic;">krypterade</span> meningen.</h1>
+        <form id="unlock-form">
+            <div class="input-group">
+                <input type="text" id="phrase1" placeholder="Lösenord 0a" required>
+                <input type="text" id="phrase2" placeholder="Lösenord 0b" required>
+                <input type="text" id="phrase3" placeholder="Lösenord 1" required>
+                <input type="text" id="phrase4" placeholder="Lösenord 2" required>
+                <input type="text" id="phrase5" placeholder="Lösenord 3" required>
+                <input type="text" id="phrase6" placeholder="Lösenord 4" required>
+                <input type="text" id="phrase7" placeholder="Lösenord 5" required>
+                <input type="text" id="phrase8" placeholder="Lösenord 6" required>
+            </div>
+            <div class="grid-pass-button">
+            <button class="grid-all-button" type="submit">Lås Upp</button>
+        </div>        
+        </form>
+        <div id="hidden-sentence" class="hidden ">
+            <h3 id="congrats"></h2>
+            <h2 id="sentence"></h3>
+            <ul id="questions" class="hidden">
+                <li class="question">Destination ligger nära en plats som är känd för sin rika historia och som har en av Sveriges bäst bevarade slottsruiner från medeltiden</li>
+                <li class="question">Destination ligger i närheten av ett välkänt naturreservat som erbjuder en unik biologisk mångfald och är ett populärt område för vandring och naturupplevelser</li>
+                <li class="question">Destination ligger i Hallands län och är belägen i en by nära kusten, som är känd för sitt natursköna landskap och närhet till Kattegatt</li>
+                <li class="question">Man kan uppleva en gastronomisk resa med lokalproducerade råvaror och ett besök på en ekologisk gård som är känd för sina smakrika måltider.</li>
+                <li class="question">Om du reser till en plats med koordinaterna 57.0657 N, 12.5585 E, vilken svensk region befinner du dig i.</li>
+                <li class="question">Vart ska vi? &#10084 </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../scripts.js"></script>
+</body>
+</html>

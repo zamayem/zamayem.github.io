@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link 
+            rel="stylesheet"
+            href="../style.css"
+        />
+        <title>Uppdrag 5</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <div class="grid-container" >
+        <div>
+            <h1>Uppdrag 6</h1>
+            <h2>The Epicure</h2>
+        </div>
+        <div class="grid-picture-item">
+            <img class="grid-profile-pic" src="../assets/theepicure.png"  alt="familj"/>
+        </div>
+        <div class="grid-profile-text ">
+            "Mr. Gourmet och Miss Vinoteca, som de är kända bland vänner. Deras kvällar är fyllda med kulinariska äventyr, där varje måltid blir till en resa genom smakernas värld och varje glas vin ett kapitel i deras oändliga bok av skratt och diskussioner."
+        </div>
+        <div>
+            <h3> Attribut</h3>
+        </div>
+        <div class="grid-flex-box">
+            <div class="attr-text">
+                <h4> Styrkor </h4>
+                <img class="confidential" src="../assets/confidential.png" />
+            </div>
+            <div class="attr-text">
+                <h4> Svagheter </h4>
+                <div>
+                    <ul>
+                        <li></li>
+                    </ul>                
+                </div>
+            </div>
+
+        </div>
+        <div><h3> Intel</h3></div>
+        <div class="grid-intel-text">
+            <p>
+                Den 7 augusti klockan 16:00, i det dämpade ljuset av en sommarkväll, befinner de sig             <a href="https://www.google.se/maps/place/Kungsholms+strandstig,+112+28+Stockholm/@59.3350028,18.0427129,17z/data=!3m1!4b1!4m6!3m5!1s0x465f9d6367d0f8f9:0x2dd2902a0585d64a!8m2!3d59.3350001!4d18.0452932!16s%2Fg%2F11vb5cxjlq?entry=ttu">
+                    här    
+                    </a> och är redo att fylla den tredje stolen med en extra skvätt glädje och en hel del skratt. 
+                </p>
+        </div>
+
+        <div class="grid-pass-button">
+            <div>
+                <form id="passwordForm">
+                <label for="passwordInput">Lösenord </label>
+            </div>
+            <div>
+                <input type="password" id="passwordInput" name="passwordInput" required>
+            </div>
+                <button class="grid-all-button" type="submit">Submit</button>
+                </form>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById('passwordForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // const correctPassword = 'CZQOX'; // Replace this with the correct password
+            const correctPassword = 'test'; // Replace this with the correct password
+            const inputPassword = document.getElementById('passwordInput').value;
+
+            if (inputPassword === correctPassword) {
+                window.location.href = './final.html'; 
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        });
+    </script>
+</body>
+
+</html>
+

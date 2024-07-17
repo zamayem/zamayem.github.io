@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link 
+            rel="stylesheet"
+            href="../style.css"
+        />
+        <title>Uppdrag1</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <h1> Uppdrag 1</h1>
+     <div class="poster">
+        <h2> The Kids</h2>
+        <img class="profile-pic" src="../assets/thekids2.png"  alt="emil as king"/>
+        <div class="poster-text"> 
+            <p>"**** och ****, en omaka vänskap som trots sina olikheter är oskiljaktiga. Den ena, en evig tidsoptimist och den andra är känd för sin orubbliga envishet - och tillsammans kan de erövra världen, en försenad lunch i taget. "</p>
+        </div>
+    </div>
+
+    <h3> Attribut</h3>
+    <div class="attr-container">
+        <div class="attr-text">
+            <h4> Styrkor </h4>
+            <ul>
+                <li>Generös utan dess like</li>
+                <li>Ställer alltid upp</li>
+                <li>Irriterande individer</li>
+            </ul>
+        </div>
+        <div class="attr-text">
+            <h4> Svagheter </h4>
+            <div class="confidential">
+                <img class="confidential" src="../assets/confidential.png" />
+            </div>
+        </div>
+    </div>
+
+    <div class="poster-text">
+        <h3> Intel</h3>
+    <p>De har smidat en plan som kommer att ta hela dagen – men med deras rykte för dålig planering tror vi att du kan infiltrera deras planer med lätthet.</p>
+    <p>14:00 3/8 <a href="https://www.google.se/maps/place/Kungsholms+strandstig,+112+28+Stockholm/@59.3350028,18.0427129,17z/data=!3m1!4b1!4m6!3m5!1s0x465f9d6367d0f8f9:0x2dd2902a0585d64a!8m2!3d59.3350001!4d18.0452932!16s%2Fg%2F11vb5cxjlq?entry=ttu">på denna plats</a></p>
+    </div>
+
+    <div class="pass-button">
+        <div>
+            <form id="passwordForm">
+            <label for="passwordInput">Lösenord </label>
+        </div>
+        <div>
+            <input type="password" id="passwordInput" name="passwordInput" required>
+        </div>
+            <button class="all-button" type="submit">Submit</button>
+            </form>
+    </div>
+    
+    
+    <script>
+        document.getElementById('passwordForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // const correctPassword = 'FLX'; // Replace this with the correct password
+            const correctPassword = 'test'; // Replace this with the correct password
+            const inputPassword = document.getElementById('passwordInput').value;
+
+            if (inputPassword === correctPassword) {
+                window.location.href = './mission2.html'; // You can redirect to another page or show a success message
+                // window.location.href = 'anotherpage.html'; // Uncomment to redirect to another page
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        });
+    </script>
+</body>
+
+</html>
+
