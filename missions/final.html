@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="../style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- 
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand"  href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Moa Forsberg 30 år</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./intro.html">Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./final.html">Final</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav> -->
+
+    <div class="grid-container">
+        <h1 style="margin-top:10% ;">Du har nu <span style="color: yellow;">NYCKELN</span> att lösa den <span style="font-style: italic;">krypterade</span> meningen.</h1>
+        <form id="unlock-form">
+            <div class="input-group">
+                <input type="text" id="phrase1" placeholder="Lösenord 0a" required>
+                <input type="text" id="phrase2" placeholder="Lösenord 0b" required>
+                <input type="text" id="phrase3" placeholder="Lösenord 1" required>
+                <input type="text" id="phrase4" placeholder="Lösenord 2" required>
+                <input type="text" id="phrase5" placeholder="Lösenord 3" required>
+                <input type="text" id="phrase6" placeholder="Lösenord 4" required>
+                <input type="text" id="phrase7" placeholder="Lösenord 5" required>
+                <input type="text" id="phrase8" placeholder="Lösenord 6" required>
+            </div>
+            <div class="grid-pass-button">
+            <button class="grid-all-button" type="submit">Lås Upp och Scrolla Ner</button>
+        </div>        
+        </form>
+        <div id="hidden-sentence" class="hidden ">
+            <h3 id="congrats"></h2>
+            <h2 id="sentence"></h3>
+            <ul id="questions" class="hidden">
+                <li class="question">Destination ligger nära en plats som är känd för sin rika historia och som har en av Sveriges bäst bevarade slottsruiner från medeltiden</li>
+                <li class="question">Destination ligger i närheten av ett välkänt naturreservat som erbjuder en unik biologisk mångfald och är ett populärt område för vandring och naturupplevelser</li>
+                <li class="question">Destination ligger i Hallands län och är belägen i en by nära kusten, som är känd för sitt natursköna landskap och närhet till Kattegatt</li>
+                <li class="question">Man kan uppleva en gastronomisk resa med lokalproducerade råvaror och ett besök på en ekologisk gård som är känd för sina smakrika måltider.</li>
+                <li class="question">Om du reser till en plats med koordinaterna 57.0657 N, 12.5585 E, vilken svensk region befinner du dig i.</li>
+                <p class="question">Sätt ett tidigt alarm och packa väskorna för en två-nätters äventyr! Kanske blir det ett dopp, så släng med badkläderna. Och glöm inte finkläderna – vi har två härliga restaurangbesök att se fram emot på kvällarna! &#10084</p>
+            </ul>
+        </div>
+    </div>
+    <script src="../scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

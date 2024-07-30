@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link 
+            rel="stylesheet"
+            href="../style.css"
+        />
+        <title>Uppdrag2</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <div class="grid-container" >
+        <div>
+            <h1>Uppdrag 2</h1>
+            <h2>The Family</h2>
+        </div>
+        <div class="grid-picture-item">
+            <img class="grid-profile-pic" src="../assets/thefamily2.png"  alt="familj"/>
+        </div>
+        <div class="grid-profile-text ">
+            "Är det vänner eller är det familj? Det är svårt att veta. Om det är familj, kan man inte tro det, för atmosfären är alldeles för harmonisk. Är det vänner, så måste det vara falskt, för ingen kan gilla varandra så mycket!"
+            "</div>
+        <div>
+            <h3> Attribut</h3>
+        </div>
+        <div class="grid-flex-box">
+            <div class="attr-text">
+                <h4> Styrkor </h4>
+                <ul>
+                    <li>Underbara</li>
+                    <li>Alltid redo för häng</li>
+                    <li>Älskar mat och dryck</li>
+                </ul>
+            </div>
+            <div class="attr-text">
+                <h4> Svagheter </h4>
+                <img class="confidential" src="../assets/confidential.png" />
+            </div>
+            </div>
+        </div>
+        
+        <div><h3> Intel</h3></div>
+        <div class="grid-intel-text">
+            <p>
+                De befinner sig på en svåråtkomlig plats, och vi har skickat en chaufför som kan ta dig till destinationen. Chauffören kommer att ställa en verifieringsfråga till dig, och du ska svara med orden - 'Att fisa'.
+            </p>
+            <p> Det gäller att prestera och komma på första plats annars väntar en utmaning ingen kan tycka är kul.</p>
+             
+            <p>10:30 4/8 
+                <a href="https://www.google.com/maps/place/Hemk%C3%B6p+Stadshagen/@59.3386638,18.0116896,17z/data=!3m1!4b1!4m6!3m5!1s0x465f9dcfa1b6a909:0x73c5b78a84ab8f46!8m2!3d59.3386611!4d18.0142645!16s%2Fg%2F11vjjjg_mm?entry=ttu">
+                Här</a>. Klä dig bekvämt.</p>
+        </div>
+
+        <div class="grid-pass-button">
+            <div>
+                <form id="passwordForm">
+                <label for="passwordInput">Lösenord </label>
+            </div>
+            <div>
+                <input type="password" id="passwordInput" name="passwordInput" required>
+            </div>
+                <button class="grid-all-button" type="submit">Submit</button>
+                </form>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('passwordForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const correctPassword = 'RRKIXMPXPP'; // Replace this with the correct password
+            const inputPassword = document.getElementById('passwordInput').value;
+
+            if (inputPassword === correctPassword) {
+                window.location.href = './mission3.html'; // You can redirect to another page or show a success message
+                // window.location.href = 'anotherpage.html'; // Uncomment to redirect to another page
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        });
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html id="first-background" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="./style.css" rel="stylesheet"/>
+        <title>Moski Poski</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <!-- <nav class="navbar fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand"  href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Moa Forsberg 30 år</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./missions/intro.html">Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./missions/final.html">Final</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav> -->
+
+        <div class="index-grid-container" >
+            <div class="index-grid-title" >
+                <h1> Mosen</h1>
+            </div>
+            <div class="index-grid-info" >
+                    <h3>Kod</h3>
+                    <div>
+                        <form id="passwordForm">
+                        <label for="passwordInput"> </label>
+                    </div>
+                    <div>
+                        <input type="password" id="passwordInput" name="passwordInput" required>
+                    </div>
+                        <button class="all-button" type="submit">Ange</button>
+                        </form>
+                </div>
+            
+
+        <script>
+            document.getElementById('passwordForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const correctPassword = '940810'; 
+                const correctMission0a = 'TQCDXTF'; 
+                const correctMission0b = 'BR'; 
+                const correctMission1 = 'FLX'; 
+                const correctMission2 = 'RRKIXMPXPP'; 
+                const correctMission3 = 'OAK'; 
+                const correctMission4 = 'ÖHTRBA'; 
+                const correctMission5 = 'FLX'; 
+                const correctMission6 = 'CZQOX'; 
+                const inputPassword = document.getElementById('passwordInput').value;
+    
+                if (inputPassword === correctPassword) {
+                    window.location.href = './missions/intro.html';
+                  
+                } if (inputPassword === correctMission0a) {
+                    window.location.href = './missions/mission0b.html';
+                }
+                if (inputPassword === correctMission0b) {
+                    window.location.href = './missions/mission1.html'; 
+                }
+                if (inputPassword === correctMission1) {
+                    window.location.href = './missions/mission2.html'; 
+                }
+                if (inputPassword === correctMission2) {
+                    window.location.href = './missions/mission3.html'; 
+                }
+                if (inputPassword === correctMission3) {
+                    window.location.href = './missions/mission4.html'; 
+                }
+                if (inputPassword === correctMission4) {
+                    window.location.href = './missions/mission5.html'; 
+                }
+                if (inputPassword === correctMission5) {
+                    window.location.href = './missions/mission6.html'; 
+                }
+                if (inputPassword === correctMission6) {
+                    window.location.href = './missions/final.html'; 
+                }
+               
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
